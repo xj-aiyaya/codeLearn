@@ -33,6 +33,7 @@ public class PathVariableController {
     @ResponseBody
     public String getLogin(@PathVariable("userId") String userId, @PathVariable("roleId") String roleId) {
         String s ="v1.0.3";
+        String a = "这是0.3版本的特殊文本";
         return "User Id : " + userId + " Role Id : " + roleId;
     }
 
