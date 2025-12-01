@@ -43,6 +43,7 @@ public class PathVariableController {
     public String getRegExp(@PathVariable("regexp1") String regexp1) {
 
         String s ="v1.0.3";
+        String a ="这是0.1版本的特殊文本";
         return "URI Part : " + regexp1;
     }
 }
