@@ -32,7 +32,7 @@ public class PathVariableController {
     @RequestMapping(value = "/user/{userId}/roles/{roleId}", method = RequestMethod.GET)
     @ResponseBody
     public String getLogin(@PathVariable("userId") String userId, @PathVariable("roleId") String roleId) {
-        String s ="v1.0.2";
+        String s ="v1.0.1";
         return "User Id : " + userId + " Role Id : " + roleId;
     }
 
