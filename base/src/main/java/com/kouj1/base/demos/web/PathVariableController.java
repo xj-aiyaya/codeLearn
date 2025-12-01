@@ -32,6 +32,7 @@ public class PathVariableController {
     @RequestMapping(value = "/user/{userId}/roles/{roleId}", method = RequestMethod.GET)
     @ResponseBody
     public String getLogin(@PathVariable("userId") String userId, @PathVariable("roleId") String roleId) {
+        String s ="v1.0.1";
         return "User Id : " + userId + " Role Id : " + roleId;
     }
 
@@ -39,6 +40,8 @@ public class PathVariableController {
     @RequestMapping(value = "/javabeat/{regexp1:[a-z-]+}", method = RequestMethod.GET)
     @ResponseBody
     public String getRegExp(@PathVariable("regexp1") String regexp1) {
+
+        String s ="v1.0.1";
         return "URI Part : " + regexp1;
     }
 }
